@@ -108,9 +108,9 @@ class ModelSpec:
 
 configs = {
     "flux-dev": ModelSpec(
-        repo_id="black-forest-labs/FLUX.1-dev",
-        repo_id_ae="black-forest-labs/FLUX.1-dev",
-        repo_flow="flux1-dev.safetensors",
+        repo_id="enhanceaiteam/midflow",
+        repo_id_ae="black-forest-labs/FLUX.1-schnell",
+        repo_flow="midflow_high.safetensors",
         repo_ae="ae.safetensors",
         ckpt_path=os.getenv("FLUX_DEV"),
         params=FluxParams(
@@ -141,9 +141,9 @@ configs = {
         ),
     ),
     "flux-dev-fp8": ModelSpec(
-        repo_id="XLabs-AI/flux-dev-fp8",
-        repo_id_ae="black-forest-labs/FLUX.1-dev",
-        repo_flow="flux-dev-fp8.safetensors",
+        repo_id="enhanceaiteam/midflow",
+        repo_id_ae="black-forest-labs/FLUX.1-schnell",
+        repo_flow="midflow_high.safetensors",
         repo_ae="ae.safetensors",
         ckpt_path=os.getenv("FLUX_DEV_FP8"),
         params=FluxParams(
@@ -175,7 +175,7 @@ configs = {
     ),
     "flux-schnell": ModelSpec(
         repo_id="enhanceaiteam/midflow",
-        repo_id_ae="black-forest-labs/FLUX.1-dev",
+        repo_id_ae="black-forest-labs/FLUX.1-schnell",
         repo_flow="midflow_high.safetensors",
         repo_ae="ae.safetensors",
         ckpt_path=os.getenv("FLUX_SCHNELL"),
